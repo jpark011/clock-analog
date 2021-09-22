@@ -2,6 +2,12 @@ const hr = document.querySelector('#hr');
 const min = document.querySelector('#min');
 const sec = document.querySelector('#sec');
 
+const toggle = document.querySelector('.toggle');
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+});
+
 setInterval(() => {
   const now = new Date();
   const hours = now.getHours();
